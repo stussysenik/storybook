@@ -12,6 +12,7 @@ import { docgenServer } from './docgen-server.ts';
 import { nextjsToNextjsVite } from './nextjs-to-nextjs-vite.ts';
 import { reactViteToTanstackReact } from './react-vite-to-tanstack-react.ts';
 import { removeChangeDetectionFlag } from './remove-change-detection-flag.ts';
+import { removeDefaultViewport } from './remove-default-viewport.ts';
 import { removeLegacyFeatureFlags } from './remove-legacy-feature-flags.ts';
 import { removeExperimentalReview } from './remove-experimental-review.ts';
 import { rnOndeviceAddonsToDeviceAddons } from './rn-ondevice-addons-to-device-addons.ts';
@@ -57,6 +58,7 @@ export const allFixes: Fix[] = [
   csfNextMockedArgs,
   removeExperimentalReview,
   removeChangeDetectionFlag,
+  removeDefaultViewport,
   removeLegacyFeatureFlags,
   skills,
   docgenServer,
