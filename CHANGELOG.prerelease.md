@@ -1,3 +1,22 @@
+## 11.0.0-beta.4
+
+- Addon A11y: Update vision simulators to be more rigorous - [#37454](https://github.com/storybookjs/storybook/pull/37454), thanks @Sidnioulz!
+- Addons: Keep transient panel state out of the manager store - [#37391](https://github.com/storybookjs/storybook/pull/37391), thanks @Sidnioulz!
+- Angular: Remove destroyed applications from the renderer map - [#37426](https://github.com/storybookjs/storybook/pull/37426), thanks @arturovt!
+- CLI: Fix upgrades with --config-dir . - [#37394](https://github.com/storybookjs/storybook/pull/37394), thanks @aleksaToljic!
+- CLI: Report the real configuration error when doctor cannot read a project - [#37443](https://github.com/storybookjs/storybook/pull/37443), thanks @aleksaToljic!
+- CLI: Run story tests by file or by what changed with `storybook tools test run` - [#37411](https://github.com/storybookjs/storybook/pull/37411), thanks @kasperpeulen!
+- CSF-Tools: Read destructured local constants in story args - [#37313](https://github.com/storybookjs/storybook/pull/37313), thanks @JReinhold!
+- Docgen: Resolve components and subcomponents the same way in every framework - [#37314](https://github.com/storybookjs/storybook/pull/37314), thanks @JReinhold!
+- Docs: Clear the inline story error once it renders again - [#37445](https://github.com/storybookjs/storybook/pull/37445), thanks @shivastuu!
+- MCP: Bump @tmcp/transport-http to 0.9.1 - [#37415](https://github.com/storybookjs/storybook/pull/37415), thanks @lampmaster!
+- Manager: Cut the re-renders left on a story click - [#37393](https://github.com/storybookjs/storybook/pull/37393), thanks @Sidnioulz!
+- Next.js: Fix TypeScript 6 peer conflict - [#37442](https://github.com/storybookjs/storybook/pull/37442), thanks @Kakadus!
+- Preview API: Keep color args intact when restoring them from the URL - [#37395](https://github.com/storybookjs/storybook/pull/37395), thanks @adityajai119!
+- Preview API: Keep the written form of numeric strings from URL args - [#37429](https://github.com/storybookjs/storybook/pull/37429), thanks @spokodev!
+- Svelte: Keep state passed to Svelte CSF Story args reactive - [#37319](https://github.com/storybookjs/storybook/pull/37319), thanks @JReinhold!
+- Tests: Reuse Vitest workers across files outside core and svelte - [#37427](https://github.com/storybookjs/storybook/pull/37427), thanks @ndelangen!
+
 ## 11.0.0-beta.3
 
 - Angular: Reject partial loglevel matches - [#37044](https://github.com/storybookjs/storybook/pull/37044), thanks @subhwastaken!
