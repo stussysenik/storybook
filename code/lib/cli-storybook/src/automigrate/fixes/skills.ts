@@ -8,6 +8,8 @@ import type { Fix } from '../types.ts';
 import { ANGULAR_VITE_PACKAGE, offersAngularViteMigration } from './angular-to-angular-vite.ts';
 
 const introducedIn = '11.0.0';
+const angularSkillsLink =
+  'https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#storybook-skills-on-angular-projects';
 
 export const skills: Fix<{ afterAngularViteMigration?: boolean }> = {
   id: 'skills',
@@ -54,7 +56,7 @@ export const skills: Fix<{ afterAngularViteMigration?: boolean }> = {
       !packageManager.getAllDependencies()[ANGULAR_VITE_PACKAGE]
     ) {
       logger.warn(
-        `The Storybook skills need ${ANGULAR_VITE_PACKAGE}, so they were not installed. Run \`npx storybook automigrate angular-to-angular-vite\` and then \`npx storybook automigrate skills\`.`
+        `The Storybook skills need ${ANGULAR_VITE_PACKAGE}, so they were not installed. Run \`npx storybook automigrate angular-to-angular-vite\` and then \`npx storybook automigrate skills\`. See ${angularSkillsLink}`
       );
       return false;
     }

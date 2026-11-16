@@ -73,6 +73,7 @@
   - [`changeDetection` feature flag removed](#changedetection-feature-flag-removed)
   - [`storybook ai` command removed](#storybook-ai-command-removed)
   - [`stories` skill split into four skills](#stories-skill-split-into-four-skills)
+  - [Storybook skills on Angular projects](#storybook-skills-on-angular-projects)
   - [`--preview-url` and `--force-build-preview` removed](#--preview-url-and---force-build-preview-removed)
   - [Automigrations for Storybook 10 and earlier removed](#automigrations-for-storybook-10-and-earlier-removed)
   - [Web Components: server-side docgen suffixes event, slot and part argType keys](#web-components-server-side-docgen-suffixes-event-slot-and-part-argtype-keys)
@@ -1939,6 +1940,10 @@ For every change to how the UI looks (you create, change, or delete a component,
 ```
 
 See [Skills and plugins](docs/ai/skills.mdx) for more details.
+
+### Storybook skills on Angular projects
+
+The `skills` automigration needs `@storybook/angular-vite` on an Angular project. When the upgrade does not move the project off `@storybook/angular`, the automigration is cancelled, prints the reason, and writes no `skills-lock.json`. Run `npx storybook automigrate angular-to-angular-vite`, then `npx storybook automigrate skills`, to install the skills and the `AGENTS.md` workflow section.
 
 ### `--preview-url` and `--force-build-preview` removed
 

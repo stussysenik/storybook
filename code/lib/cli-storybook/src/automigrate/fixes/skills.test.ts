@@ -175,6 +175,9 @@ describe('skills', () => {
       expect(logger.warn).toHaveBeenCalledWith(
         expect.stringContaining('npx storybook automigrate angular-to-angular-vite')
       );
+      expect(logger.warn).toHaveBeenCalledWith(
+        expect.stringContaining('MIGRATION.md#storybook-skills-on-angular-projects')
+      );
     });
 
     it('does not warn on Angular when another Storybook of the monorepo installed the skills', async () => {
